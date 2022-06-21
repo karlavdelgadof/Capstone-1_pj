@@ -1,0 +1,154 @@
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 375px;
+}
+
+:root {
+  /* webpage-colors */
+  --color-one: #272a31;
+  --color-two: #ec5242;
+  --color-three: #d3d3d3;
+  --color-four: rgb(247, 247, 248);
+  --color-five: #f7f7f7;
+
+  /* webpage-fonts */
+  --font-one: 'COCOGOOSE', sans-serif;
+  --font-two: 'Lato', sans-serif;
+}
+
+#main {
+  background-image: url(../multimedia/headline-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#main-header {
+  display: flex;
+  height: 100%;
+  padding: 0.8rem;
+}
+
+#nav-bar {
+  height: auto;
+  width: 100%;
+  display: flex;
+}
+
+#hmg-menu {
+  display: block;
+  cursor: pointer;
+  padding-right: 2em;
+  align-self: flex-end;
+}
+
+.line {
+  display: block;
+  background-color: #272a31;
+  width: 20px;
+  height: 2px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.section {
+  padding: 2rem 1rem;
+}
+
+#headline {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 0.5rem;
+}
+
+#headline p {
+  padding: 1rem;
+  background-color: var(--color-four);
+  border: 2px solid white;
+}
+
+#headline-1-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#headline-title {
+  font-family: var(--font-one);
+  font-size: 3em;
+  line-height: 3.1rem;
+}
+
+#hello-msg {
+  color: var(--color-two);
+  font-family: var(--font-two);
+  font-weight: normal;
+  font-size: 1em;
+}
+
+#date {
+  color: rgb(87, 87, 87);
+  font-family: var(--font-one);
+  font-size: 1.5em;
+}
+
+#program {
+  background-color: var(--color-one);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background-image: url("../multimedia/pattern_bg.png");
+  font-family: var(--font-two);
+}
+
+#activities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.2);
+  padding: 1.5rem;
+}
+
+.card-img {
+  width: fit-content;
+  height: auto;
+}
+
+.card h3 {
+  color: var(--color-two);
+  font-family: var(--font-two);
+  min-width: 30%;
+}
+
+#join {
+  text-decoration: none;
+  padding: 2rem 2.5rem;
+  background-color: var(--color-two);
+  font-family: var(--font-two);
+  color: var(--color-five);
+}
+
+#featured-artists {
+  display: flex;
+  justify-content: center;
+}
