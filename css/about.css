@@ -272,8 +272,8 @@ li .link {
 #logos {
   display: flex;
   flex-wrap: wrap;
-  width: 80vw;
-  height: 25vh;
+  width: 300px;
+  height: 200px;
   gap: 2rem;
 }
 
