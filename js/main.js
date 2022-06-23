@@ -49,13 +49,18 @@ document.querySelectorAll('.link').forEach((n) => n
   .addEventListener('click', () => {
     hmgIcon.classList.remove('active');
     overlayMenu.classList.remove('active');
+    overlayMenu.style.display = 'none';
   }));
 
-const featuredSection = document.querySelector('#featured-artists')
+const featuredSection = document.querySelector('#featured-artists');
+const artistContainer = document.createElement('div');
+artistContainer.classList.add('a-container');
+
 
 function createCard(section) {
   const artistCard = document.createElement('article');
   artistCard.classList.add('artist-card');
+  artistContainer.appendChild(artistCard)
 
   const picture = document.createElement('img');
   picture.classList.add('artist-img');
@@ -77,25 +82,19 @@ function createCard(section) {
   artistGenre.textContent = section.genre;
   artistContent.appendChild(artistGenre);
 
-  const greyLine = document.createElement('div');
-  greyLine.style.backgroundColor = '#5e5e5e';
-  greyLine.style.width = '5px';
-  greyLine.style.height = '2px';
-  artistContent.appendChild(greyLine);
-
-
   const pText = document.createElement('p');
   pText.classList.add('desc-p');
   pText.textContent = section.description;
   artistContent.appendChild(pText);
 
-  featuredSection.appendChild(artistCard);
+  artistContainer.appendChild(artistCard);
 }
 
 window.addEventListener('load', () => {
   if (document.title === 'Nova Frazu\'s 2022 Summer Festival') {
+    featuredSection.appendChild(artistContainer);
     featuredArtists.forEach(createCard);
-  }
+  }  
 })
 
 
