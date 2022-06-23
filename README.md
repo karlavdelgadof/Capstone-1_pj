@@ -8,6 +8,10 @@ This project is a website version of a music festival event website created to m
 
 - HTML/CSS and JavaScript
 
+## Live Demo :arrow_forward:
+
+[Capstone Website](https://karlavdelgadof.github.io/Capstone-1_pj/)
+
 ## Authors 
 
 👤 Karla Delgado
