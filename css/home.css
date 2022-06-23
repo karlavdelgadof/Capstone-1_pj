@@ -256,6 +256,10 @@ li .link {
   padding: 1.5rem;
 }
 
+.card:hover {
+  border: 1px solid var(--color-five);
+}
+
 .card-img {
   width: fit-content;
   height: auto;
