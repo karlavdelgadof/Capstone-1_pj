@@ -162,7 +162,7 @@ li .link {
   background-position: bottom;
   background-size: cover;
   background-blend-mode: soft-light;
-  background-image: url("../multimedia/title-img.jpg");
+  background-image: url("./multimedia/title-img.jpg");
   flex-direction: column;
   height: 100%;
   gap: 0.5rem;
@@ -193,7 +193,7 @@ li .link {
 
 #headline-title {
   font-family: var(--font-one);
-  background-image: url("../multimedia/title-img.jpg");
+  background-image: url("./multimedia/title-img.jpg");
   background-position: right top;
   background-clip: text;
   -webkit-background-clip: text;
