@@ -198,6 +198,7 @@ li .link {
   font-family: var(--font-one);
   background-image: url("/multimedia/title-img.jpg");
   background-position: right top;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-font-smoothing: antialiased;

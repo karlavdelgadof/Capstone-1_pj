@@ -56,11 +56,10 @@ const featuredSection = document.querySelector('#featured-artists');
 const artistContainer = document.createElement('div');
 artistContainer.classList.add('a-container');
 
-
 function createCard(section) {
   const artistCard = document.createElement('article');
   artistCard.classList.add('artist-card');
-  artistContainer.appendChild(artistCard)
+  artistContainer.appendChild(artistCard);
 
   const picture = document.createElement('img');
   picture.classList.add('artist-img');
@@ -94,8 +93,5 @@ window.addEventListener('load', () => {
   if (document.title === 'Nova Frazu\'s 2022 Summer Festival') {
     featuredSection.appendChild(artistContainer);
     featuredArtists.forEach(createCard);
-  }  
-})
-
-
-
+  }
+});
