@@ -199,7 +199,6 @@ li .link {
   background-image: url("/multimedia/title-img.jpg");
   background-position: right top;
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-font-smoothing: antialiased;
   font-size: 2em;
